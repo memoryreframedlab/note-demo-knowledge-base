@@ -1,11 +1,11 @@
-# AIが作業用の名前（claude/ や codex/ で始まる）で送ったメモを、自動で main に取り込む
+# Merge notes that AI pushed to claude/, ccr- or codex/ branches into main
 name: Merge notes into main
 
 on:
   push:
     branches:
       - "claude/**" # Claude Code
-      - "ccr-**"    # Claude Code（セッションの名前）
+      - "ccr-**"    # Claude Code (session)
       - "codex/**"  # Codex
 
 permissions:
